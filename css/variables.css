@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Inconsolata:wght@200..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Syncopate:wght@400;700&display=swap');
+
+
+:root{
+    --color-base:#8884FF;
+    --color-secundario: #d7bce8;
+    --color-terciario:#e8cee4;
+    --color-acento:#fde2ff;
+
+    --color-base-variant1: #FFFFFF;
+    --color-base-variant2: #D9D7FF;
+    --color-base-variant3: #453EFD;
+    --color-base-variant4: #16119B;
+
+    --color-secundario-variant1: #FFFFFF;
+    --color-secundario-variant2: #FDFBFF;
+    --color-secundario-variant3: #9667B3;
+    --color-secundario-variant4: #50206F;
+
+    --color-terciario-variant1: #FFFFFF;
+    --color-terciario-variant2: #FEFDFE;
+    --color-terciario-variant3: #B678AC;
+    --color-terciario-variant4: #691A5D;
+
+    --color-acento-variant1: #FFFFFF;
+    --color-acento-variant2: #FFFFFF;
+    --color-acento-variant3: #F67DFE;
+    --color-acento-variant4: #B82BC2;
+
+    --gradiente-overlay: linear-gradient(0deg, rgba(175,114,166,0.3) 0%, rgba(201,161,244,0.2) 100%);
+    --gradiente-titulo: linear-gradient(-320deg, var(--color-base), var(--color-secundario-variant3), var(--color-terciario-variant3), var(--color-acento-variant3));
+
+    --font-family-primary: "Inconsolata",sans-serif;
+    --font-family-secondary: "Roboto Mono",sans-serif;
+
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+
+    --text-size-xs: 0.56rem;
+    --text-size-sm: 0.75rem;
+    --text-size-md: 1rem;
+    --text-size-lg: 1.33rem;
+    --text-size-xl: 1.78rem;
+    --text-size-2xl: 2.37rem;
+    --text-size-3xl: 3.16rem;
+    --text-size-4xl: 4.21rem;
+    --text-size-5xl: 5.61rem;
+
+
+    --text2-size-xs: 0.44rem;
+    --text2-size-sm: 0.67rem;
+    --text2-size-md: 1rem;
+    --text2-size-lg: 1.5rem;
+    --text2-size-xl: 2.25rem;
+    --text2-size-2xl: 3.38rem;
+    --text2-size-3xl: 5.06rem;
+    --text2-size-4xl: 7.59rem;
+    --text2-size-5xl: 11.39rem;
+
+
+
+    --font-weight-bold: 900;
+    --font-weight-medium: 600;
+    --font-weight-light: 300;
+
+    --box-shadow-md: 1px 1px 30px 0px rgb(216, 173, 242) ;
+    --box-shadow-lg: 1px 1px 60px 0px rgb(216, 173, 242) ;
+
+}

@@ -1,0 +1,237 @@
+@import url(variables.css);
+
+.bolder{
+    font-weight: var(--font-weight-bold);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100dvw;
+    height: 100dvh;
+    background-image: var(--gradiente-overlay),
+    url(../assets/images/background2.jpg);
+}
+
+.card {
+    min-width: 1000px;
+    max-width:30%;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-image: url(../assets/images/background.jpg);
+    box-shadow: var(--box-shadow-md);
+}
+
+.card:hover {
+    transform: scale(1.1);   
+    transition: transform 1s ease;
+}
+
+.card__header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: var(--spacing-sm) 0px;
+}
+
+.header__pokebola {
+    width: 70px;
+    height: 70px;
+    background: url(../assets/icons/manga-purple.png) no-repeat center center;
+    background-size: 7.5rem;
+    animation: spin 2s linear infinite;
+    margin: var(--spacing-lg);
+
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.header__entrenador-info {
+    border: 6px groove var(--color-secundario);
+    display: flex;
+    flex-direction: row;
+    padding:0 var(--spacing-md);
+    border-radius: 16px;
+    margin: var(--spacing-sm);
+    align-items: baseline;
+    box-shadow: var(--box-shadow-md);
+    
+    
+}
+
+.header__entrenador-info h1 {
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-bold);
+    margin-right:var(--spacing-md);
+    font-size: var(--text-size-xl);
+    color: var(--color-secundario-variant1);
+    
+}
+
+.header__entrenador-info p {
+    font-family: var(--font-family-secondary);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--text-size-lg);
+    color: var(--color-secundario-variant1);
+    margin-left:var(--spacing-md);
+    
+}
+
+.card__contenido {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: var(--spacing-md) 0px;
+}
+
+
+.card__entrenador-img {
+    width: 280px;
+    height: 260px;
+    background: url(../assets/images/Koga_HGSS.gif) no-repeat center center;
+    background-size: cover;
+    
+}
+
+.card__medallas{
+    height: 100px;
+    margin: var(--spacing-sm) 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.card__medalla {
+    padding: 2px;
+    flex: 0 0 calc(10.3% - 10px); 
+    box-sizing: border-box; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.card__medalla img{
+    width: 100%;
+    
+}
+
+.card__footer{
+    width: 100%;
+    height: 40px;
+    margin: var(--spacing-sm) 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family-secondary);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--text-size-lg);
+}
+
+.card__footer a {
+    margin: 0px var(--spacing-md);
+    text-decoration: underline;
+    color: var(--color-secundario);
+}
+
+.card__pokemones {
+    width: 700px;
+    max-width: 100%;
+    height: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 15px; 
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  
+  .card__pokemon {
+    position: relative;
+    border: 6px groove var(--color-secundario); 
+    border-radius: 8px;
+    padding: 10px;
+    flex: 0 0 calc(33.3% - 20px); 
+    box-sizing: border-box; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--box-shadow-md);
+  }
+
+
+  .card__pokemon img {
+    max-width: 100%; 
+    height: auto;
+    transform: scale(1.8); 
+
+  }
+
+  .card__pokemon img:hover {
+    transform: scale(2.6);   
+    transition: transform 1s ease;
+}
+
+.card__footer a:hover {
+    transform: scale(1.1);   
+    transition: transform 1s ease;
+}
+
+.card__medalla img:hover {
+
+    transform: scale(1.4);   
+    transition: transform 1s ease;
+}
+
+
+
+
+@keyframes shiningEffect {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 200%;
+    }
+}
+
+.overlay-animation {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.overlay-animation::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%; /* Comienza fuera de la tarjeta */
+    width: 100%;
+    height: 100%;
+    background: var(--gradiente-overlay);
+    transform: skewX(-45deg); /* Opcional: para darle un ángulo */
+    animation: shiningEffect 2s infinite;
+}
+

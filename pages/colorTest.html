@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Scheme Test</title>
+    <style>
+        :root {
+            --color-base: #545E75;
+            --color-secundario: #F2D0A4;
+            --color-terciario: #F7F7FF;
+            --color-acento: #C03221;
+
+            --color-base-variant1: #989EAA;
+            --color-base-variant2: #727A8D;
+            --color-base-variant3: #3D475F;
+            --color-base-variant4: #25304A;
+
+            --color-secundario-variant1: #FFF6EA;
+            --color-secundario-variant2: #FFEACE;
+            --color-secundario-variant3: #CBA16B;
+            --color-secundario-variant4: #A5783D;
+
+            --color-terciario-variant1: #FFFFFF;
+            --color-terciario-variant2: #FFFFFF;
+            --color-terciario-variant3: #BEBEFF;
+            --color-terciario-variant4: #9292FE;
+
+            --color-acento-variant1: #FB8474;
+            --color-acento-variant2: #DB5645;
+            --color-acento-variant3: #9D1D0C;
+            --color-acento-variant4: #740D00;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-terciario);
+            color: var(--color-base);
+        }
+
+        .test-div {
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 2px solid black;
+        }
+
+        .variant1 {
+            background-color: var(--color-base-variant1);
+            color: var(--color-base-variant4);
+        }
+
+        .variant2 {
+            background-color: var(--color-secundario);
+            color: var(--color-base);
+        }
+
+        .variant3 {
+            background-color: var(--color-acento-variant1);
+            color: var(--color-terciario);
+        }
+
+        .variant4 {
+            background-color: var(--color-base-variant4);
+            color: var(--color-secundario-variant2);
+        }
+
+        .variant5 {
+            background-color: var(--color-secundario-variant1);
+            color: var(--color-base-variant4);
+        }
+
+        .variant6 {
+            background-color: var(--color-acento-variant3);
+            color: var(--color-terciario);
+        }
+
+        h3 {
+            margin: 0 0 10px;
+        }
+
+        p {
+            margin: 0 0 15px;
+        }
+
+        button {
+            background-color: var(--color-acento-variant2);
+            color: var(--color-terciario);
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: var(--color-acento);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="test-div variant1">
+        <h3>Variant 1 Title</h3>
+        <p>This div uses the first variant of the base color for its background and tertiary color for text.</p>
+        <button>Click Me</button>
+    </div>
+
+    <div class="test-div variant2">
+        <h3>Variant 2 Title</h3>
+        <p>This div uses the third variant of the secondary color for its background and base color for text.</p>
+        <button>Click Me</button>
+    </div>
+
+    <div class="test-div variant3">
+        <h3>Variant 3 Title</h3>
+        <p>This div uses the first variant of the accent color for its background and tertiary color for text.</p>
+        <button>Click Me</button>
+    </div>
+    <div class="test-div variant4">
+        <h3>Variant 4 Title</h3>
+        <p>This div uses the fourth variant of the base color for its background and secondary color for text.</p>
+        <button>Click Me</button>
+    </div>
+
+    <div class="test-div variant5">
+        <h3>Variant 5 Title</h3>
+        <p>This div uses the first variant of the secondary color for its background and accent color for text.</p>
+        <button>Click Me</button>
+    </div>
+
+    <div class="test-div variant6">
+        <h3>Variant 6 Title</h3>
+        <p>This div uses the third variant of the accent color for its background and tertiary color for text.</p>
+        <button>Click Me</button>
+    </div>
+</body>
+</html>
