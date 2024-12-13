@@ -6,99 +6,111 @@
     <title>Color Scheme Test</title>
     <style>
         :root {
-            --color-base: #545E75;
-            --color-secundario: #F2D0A4;
-            --color-terciario: #F7F7FF;
-            --color-acento: #C03221;
+    --color-base:#8884FF;
+    --color-secundario: #d7bce8;
+    --color-terciario:#e8cee4;
+    --color-acento:#fde2ff;
 
-            --color-base-variant1: #989EAA;
-            --color-base-variant2: #727A8D;
-            --color-base-variant3: #3D475F;
-            --color-base-variant4: #25304A;
+    --color-base-variant1: #FFFFFF;
+    --color-base-variant2: #D9D7FF;
+    --color-base-variant3: #453EFD;
+    --color-base-variant4: #16119B;
 
-            --color-secundario-variant1: #FFF6EA;
-            --color-secundario-variant2: #FFEACE;
-            --color-secundario-variant3: #CBA16B;
-            --color-secundario-variant4: #A5783D;
+    --color-secundario-variant1: #FFFFFF;
+    --color-secundario-variant2: #FDFBFF;
+    --color-secundario-variant3: #9667B3;
+    --color-secundario-variant4: #50206F;
 
-            --color-terciario-variant1: #FFFFFF;
-            --color-terciario-variant2: #FFFFFF;
-            --color-terciario-variant3: #BEBEFF;
-            --color-terciario-variant4: #9292FE;
+    --color-terciario-variant1: #FFFFFF;
+    --color-terciario-variant2: #FEFDFE;
+    --color-terciario-variant3: #B678AC;
+    --color-terciario-variant4: #691A5D;
 
-            --color-acento-variant1: #FB8474;
-            --color-acento-variant2: #DB5645;
-            --color-acento-variant3: #9D1D0C;
-            --color-acento-variant4: #740D00;
+    --color-acento-variant1: #FFFFFF;
+    --color-acento-variant2: #FFFFFF;
+    --color-acento-variant3: #F67DFE;
+    --color-acento-variant4: #B82BC2;
         }
 
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--color-terciario);
-            color: var(--color-base);
-        }
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-base-variant2); /* Fondo suave */
+    color: var(--color-base-variant4); /* Texto oscuro */
+}
 
-        .test-div {
-            padding: 20px;
-            margin: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border: 2px solid black;
-        }
+.test-div {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--color-base);
+}
 
-        .variant1 {
-            background-color: var(--color-base-variant1);
-            color: var(--color-base-variant4);
-        }
+.variant1 {
+    background-color: var(--color-base); /* Blanco */
+    color: var(--color-base-variant4); /* Azul muy oscuro */
+}
 
-        .variant2 {
-            background-color: var(--color-secundario);
-            color: var(--color-base);
-        }
+.variant2 {
+    background-color: var(--color-secundario); /* Morado suave */
+    color: var(--color-secundario-variant4); /* Azul principal */
+}
 
-        .variant3 {
-            background-color: var(--color-acento-variant1);
-            color: var(--color-terciario);
-        }
+.variant3 {
+    background-color: var(--color-acento); /* Rosa muy suave */
+    color: var(--color-base-variant3); /* Rosa oscuro */
+}
 
-        .variant4 {
-            background-color: var(--color-base-variant4);
-            color: var(--color-secundario-variant2);
-        }
+.variant4 {
+    background-color: var(--color-base-variant4); /* Azul muy oscuro */
+    color: var(--color-secundario-variant1); /* Blanco */
+}
 
-        .variant5 {
-            background-color: var(--color-secundario-variant1);
-            color: var(--color-base-variant4);
-        }
+.variant5 {
+    background-color: var(--color-secundario-variant4); /* Morado medio */
+    color: var(--color-acento-variant1); /* Blanco */
+}
 
-        .variant6 {
-            background-color: var(--color-acento-variant3);
-            color: var(--color-terciario);
-        }
+.variant6 {
+    background-color: var(--color-acento-variant3); /* Rosa vivo */
+    color: var(--color-terciario-variant1); /* Blanco */
+}
 
-        h3 {
-            margin: 0 0 10px;
-        }
+.variant2 button {
+    background-color: var(--color-secundario-variant4); /* Rosa pastel */
+    color: var(--color-base-variant1); /* Azul oscuro */
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
-        p {
-            margin: 0 0 15px;
-        }
+.variant1 button {
+    background-color: var(--color-base-variant3); /* Rosa pastel */
+    color: var(--color-base-variant1); /* Azul oscuro */
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
-        button {
-            background-color: var(--color-acento-variant2);
-            color: var(--color-terciario);
-            border: none;
-            padding: 10px 15px;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+button {
+    background-color: var(--color-secundario-variant3); /* Rosa pastel */
+    color: var(--color-base-variant1); /* Azul oscuro */
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
-        button:hover {
-            background-color: var(--color-acento);
-        }
     </style>
 </head>
 <body>
