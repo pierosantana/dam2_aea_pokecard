@@ -17,14 +17,14 @@ body {
 }
 
 .card {
-    min-width: 1000px;
-    max-width:30%;
+    width: 760px;
+    min-width: 50%;
     display: flex;
     position: relative;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
     border-radius: 40px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background-image: url(../assets/images/background.jpg);
@@ -45,10 +45,10 @@ body {
 }
 
 .header__pokebola {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 60px;
     background: url(../assets/icons/manga-purple.png) no-repeat center center;
-    background-size: 7.5rem;
+    background-size: 6.5rem;
     animation: spin 2s linear infinite;
     margin: var(--spacing-lg);
 
@@ -81,7 +81,7 @@ body {
     font-family: var(--font-family-primary);
     font-weight: var(--font-weight-bold);
     margin-right:var(--spacing-md);
-    font-size: var(--text-size-xl);
+    font-size: var(--text-size-md);
     color: var(--color-secundario-variant1);
     
 }
@@ -91,7 +91,7 @@ body {
     font-weight: var(--font-weight-bold);
     font-size: var(--text-size-lg);
     color: var(--color-secundario-variant1);
-    margin-left:var(--spacing-md);
+    margin-left:var(--spacing-xs);
     
 }
 
@@ -99,23 +99,32 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin: var(--spacing-md) 0px;
+    margin: var(--spacing-xs) 0px;
 }
 
 
 .card__entrenador-img {
-    width: 280px;
-    height: 260px;
-    background: url(../assets/images/Koga_HGSS.gif) no-repeat center center;
-    background-size: cover;
-    
+    width: 30%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    /*background: url(../assets/images/Koga_HGSS.gif) no-repeat center center;
+    background-size: cover;*/
+}
+
+.card__entrenador-img img{
+    max-width: 80%;
+    max-height: 60%; 
+    height: auto;
+    transform: scale(2.3); 
 }
 
 .card__medallas{
-    height: 100px;
-    margin: var(--spacing-sm) 0px;
+    min-height: 50%;
+    height: 100%;
+    margin: var(--spacing-xs) 0px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 
 }
@@ -132,32 +141,30 @@ body {
 }
 
 .card__medalla img{
-    width: 100%;
+    width: 90%;
     
 }
 
 .card__footer{
     width: 100%;
-    height: 40px;
     margin: var(--spacing-sm) 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: var(--font-family-secondary);
     font-weight: var(--font-weight-bold);
-    font-size: var(--text-size-lg);
+    font-size: var(--text-size-xl);
 }
 
 .card__footer a {
-    margin: 0px var(--spacing-md);
+    margin: 0px var(--spacing-sm);
     text-decoration: underline;
     color: var(--color-secundario);
 }
 
 .card__pokemones {
     width: 700px;
-    max-width: 100%;
-    height: 360px;
+    height: 260px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center; 
@@ -182,9 +189,10 @@ body {
 
 
   .card__pokemon img {
-    max-width: 100%; 
+    max-width: 80%;
+    max-height: 60%; 
     height: auto;
-    transform: scale(1.8); 
+    transform: scale(1.7); 
 
   }
 
@@ -200,7 +208,7 @@ body {
 
 .card__medalla img:hover {
 
-    transform: scale(1.4);   
+    transform: scale(1.6);   
     transition: transform 1s ease;
 }
 

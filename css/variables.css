@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Inconsolata:wght@200..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Syncopate:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=VT323&display=swap');
 
 :root{
     --color-base:#8884FF;
@@ -30,8 +29,8 @@
     --gradiente-overlay: linear-gradient(0deg, rgba(175,114,166,0.3) 0%, rgba(201,161,244,0.2) 100%);
     --gradiente-titulo: linear-gradient(-320deg, var(--color-base), var(--color-secundario-variant3), var(--color-terciario-variant3), var(--color-acento-variant3));
 
-    --font-family-primary: "Inconsolata",sans-serif;
-    --font-family-secondary: "Roboto Mono",sans-serif;
+    --font-family-primary: "Silkscreen",sans-serif;
+    --font-family-secondary: "VT323",sans-serif;
 
     --spacing-xs: 4px;
     --spacing-sm: 8px;
